@@ -1,3 +1,5 @@
 Development team1 commit1
 
 Development team2 commit1
+
+Development team2 commit2: ready for testing
