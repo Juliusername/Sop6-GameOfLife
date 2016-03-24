@@ -23,7 +23,7 @@
 
     </target>
 
-    <target name="jenkins-glassfish-deploy" description="Clean, build, test and deploy application to GlassFish">
+    <target name="gameoflife-environment-test" description="Clean, build, test and deploy application to GlassFish">
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
@@ -32,7 +32,7 @@
         </exec>
     </target>
     
-    <target name="jenkins-glassfish-deploy" description="Clean, build, test and deploy application to GlassFish">
+    <target name="gameoflife-environment-accept" description="Clean, build, test and deploy application to GlassFish">
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
@@ -41,7 +41,7 @@
         </exec>
     </target>
     
-    <target name="jenkins-glassfish-deploy" description="Clean, build, test and deploy application to GlassFish">
+    <target name="gameoflife-environment-product" description="Clean, build, test and deploy application to GlassFish">
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
