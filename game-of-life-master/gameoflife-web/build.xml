@@ -23,10 +23,7 @@
 
     </target>
 
-    <target name="jenkins-glassfish-deploy" description="Clean, build, test and deploy application to GlassFish">
-        <antcall target="clean">
-        <antcall target="default">
-        <antcall target="test">
+    <target name="jenkins-glassfish-deploy" depends="clean, default, test" description="Clean, build, test and deploy application to GlassFish">
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
