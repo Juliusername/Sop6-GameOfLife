@@ -27,7 +27,7 @@
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
-                --passwordfile=C:/Users/Julius/MyFiles/Quik/MavenPass/Password.txt --secure=false
+                --passwordfile=C:/Password.txt --secure=false
                 deploy --force=true --name=gameoflife-environment-test --contextroot=/gameoflife-environment-test target\gameoflife.war" />
         </exec>
     </target>
@@ -36,7 +36,7 @@
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
-                --passwordfile=C:/Users/Julius/MyFiles/Quik/MavenPass/Password.txt --secure=false
+                --passwordfile=C:/Password.txt --secure=false
                 deploy --force=true --name=gameoflife-environment-accept --contextroot=/gameoflife-environment-accept target\gameoflife.war" />
         </exec>
     </target>
@@ -45,9 +45,14 @@
         <exec failonerror="true" executable="cmd" description="Deploy to GlassFish">
             <arg value="/c" />
             <arg value="asadmin --echo=true --host=localhost --port=4848 --user=admin
-                --passwordfile=C:/Users/Julius/MyFiles/Quik/MavenPass/Password.txt --secure=false
+                --passwordfile=C:/Password.txt --secure=false
                 deploy --force=true --name=gameoflife-environment-product --contextroot=/gameoflife-environment-product target\gameoflife.war" />
         </exec>
     </target>
 
+        
 </project>
+
+<!--JULIUS:     C:/Users/Julius/MyFiles/Quik/MavenPass/Password.txt
+    MAARTEN:    C:/Password.txt
+-->
