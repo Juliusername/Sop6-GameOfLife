@@ -37,7 +37,8 @@ public class PartCollection {
         
         for (int i = 0; i < NumberOfParts(); i++) {
             Part part = parts.get(i);
-            price += part.GetPrice();
+            //price += part.GetPrice();
+            price += part.price;
         }
         
         return price;
@@ -45,32 +46,28 @@ public class PartCollection {
     
     public boolean hasCasing() {
         for (Part part : parts) {
-            return part.GetType()
-                    .equals("Casing");
+            return part instanceof Casing;
         }
         return false;
     }
     
     public boolean hasProcessor() {
         for (Part part : parts) {
-            return part.GetType()
-                    .equals("Processor");
+            return part instanceof Processor;
         }
         return false;
     }
     
     public boolean hasMemory() {
         for (Part part : parts) {
-            return part.GetType()
-                    .equals("Memory");
+            return part instanceof Memory;
         }
         return false;
     }
     
     public boolean hasMotherboard() {
         for (Part part : parts) {
-            return part.GetType()
-                    .equals("Motherboard");
+            return part instanceof Motherboard;
         }
         return false;
     }

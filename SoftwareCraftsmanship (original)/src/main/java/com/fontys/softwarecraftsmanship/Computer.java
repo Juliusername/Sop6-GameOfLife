@@ -1,10 +1,8 @@
 package com.fontys.softwarecraftsmanship;
 
-import java.util.*;
-
 public class Computer {
     
-    PartCollection parts;
+    PartCollection parts = new PartCollection();
     
     public int NumberOfParts() {
         return parts.NumberOfParts();
